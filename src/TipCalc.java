@@ -8,8 +8,13 @@ public class TipCalc {
         double tipPercentage = s.nextDouble();
         System.out.println("What was the total number of people at the party/");
         int totalPeople = s.nextInt();
-        double totalTip = ((double)tipPercentage * 0.01) * totalBill);
-
-
-    }
+        double totalTip = (((double)tipPercentage * 0.01) * totalBill);
+        double billWithTip = totalBill + totalTip;
+      double eachTip =((double)tipPercentage * 0.01)* (totalBill/totalPeople);
+       double billPerPerson = (totalBill/totalPeople) + eachTip;
+       System.out.println("Total tip: " + totalTip);
+       System.out.println("Total bill with including tip: " + billWithTip);
+       System.out.println("The tip per person: " + eachTip);
+       System.out.println("The total per person: "+billPerPerson);
+}
 }
